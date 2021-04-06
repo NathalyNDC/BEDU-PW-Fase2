@@ -1,0 +1,24 @@
+header {
+
+}
+
+.filter {
+    background: linear-gradient(to right, #7F00FF, #3f00fc) !important;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    border-radius: 3px;
+    width: 110px;
+    height: 40px;
+    transition: all .6s ease-out !important;
+    font-family: 'Cabin', sans-serif;
+}
+
+.tarea {
+    display: flex;
+    background-color: #e9e1fa;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 150px;;
+}
