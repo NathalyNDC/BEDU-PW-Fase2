@@ -1,0 +1,21 @@
+.done {
+    text-decoration: line-through;
+  }
+
+  .delete {
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-width: 0;
+    border-radius: 3px;
+    margin-left: 5px;
+  }
+
+  .yes {
+    height: 20px;
+    background-color: green;
+    color: white;
+    border-width: 0;
+    border-radius: 3px;
+    margin-left: 5px;
+  }

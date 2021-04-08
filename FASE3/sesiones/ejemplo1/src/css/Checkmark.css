@@ -1,0 +1,14 @@
+.check {
+    cursor: pointer;
+    display:inline-block;
+    margin-right: 10px;
+    width: 22px;
+    height:22px;
+    transform: rotate(45deg);
+  }
+  
+  .check.doneMark {
+    opacity: .4;
+  }
+  
+ 

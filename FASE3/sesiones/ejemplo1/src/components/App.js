@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Form from './Form';
-import Todo from './Todo';
+import TodoList from './TodoList';
 
 const App = () => {
    return (
@@ -9,7 +9,7 @@ const App = () => {
       <div className="card frame">
         <Header />
         <Form />
-        <Todo/>
+        <TodoList/>
       </div>
     </div>
    );
