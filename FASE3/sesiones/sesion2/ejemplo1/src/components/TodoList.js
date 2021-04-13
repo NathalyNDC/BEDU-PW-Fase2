@@ -6,9 +6,19 @@ import '../css/TodoList.css';
 
 
 class TodoList extends React.Component{
+  state = {
+    tasks: [{task: 'hola', status:false, id:1}, {task: 'hola2', status:true, id:2}, {task: 'hola3', status:true, id:3}]
+  }
+
+   change = (id) => {
+    let arr = [...this.state.tasks];
+    let indexModif = arr.findIndex(element=> element.id === id);
+      arr[indexModif].status = !arr[indexModif].status;
+      this.setState({tasks: arr});
+  }
 
   render(){
-    let elements = this.props.tasks.map(element => <Todo key={element.id} task={element.task} done={element.status} id={element.id} change={this.props.change}/>)
+    let elements = this.state.tasks.map(element => <Todo key={element.id} task={element.task} done={element.status} id={element.id} change={this.change}/>)
     
     return (
       <div className="container-list">
