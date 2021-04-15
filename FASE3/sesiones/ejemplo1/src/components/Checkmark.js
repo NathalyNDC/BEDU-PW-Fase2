@@ -6,7 +6,6 @@ import '../css/Checkmark.css';
 
   function Checkmark(props) {
     const onChangeTask = (event) => {
-        console.log("entro");
         props.change(props.id);
         event.preventDefault();
         event.stopPropagation();

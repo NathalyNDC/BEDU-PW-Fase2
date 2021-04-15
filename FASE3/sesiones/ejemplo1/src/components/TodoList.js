@@ -5,10 +5,18 @@ import '../css/TodoList.css';
 
 
 
-class TodoList extends React.Component{
+function TodoList (props){
+  let elements = null;
+  if(props.show){
+    elements = props.tasks.filter(e=> !e.status).map(element => 
+        <Todo key={element.id} task={element.task} done={element.status} id={element.id} change={props.change} delete={props.delete}/>
+    )
+  }
+  else{
+    elements = props.tasks.map(element => <Todo key={element.id} task={element.task} done={element.status} id={element.id} change={props.change} delete={props.delete}/>)
+  }
 
-  render(){
-    let elements = this.props.tasks.map(element => <Todo key={element.id} task={element.task} done={element.status} id={element.id} change={this.props.change}/>)
+   
     
     return (
       <div className="container-list">
@@ -16,7 +24,7 @@ class TodoList extends React.Component{
       </div>
     )
   }
-};
+
 
 
 
